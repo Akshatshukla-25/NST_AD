@@ -11,6 +11,14 @@ export default function HomeScreen({ navigation }) {
                     navigation.navigate('Details', { id: 1, title: 'Item 1' })
                 }
             />
+            <Button
+                title="Try API request"
+                onPress={() => navigation.navigate('ApiState')}
+            />
+            <Button
+                title="Try API request with React Query"
+                onPress={() => navigation.navigate('ApiReactQuery')}
+            />
         </View>
     );
 }
