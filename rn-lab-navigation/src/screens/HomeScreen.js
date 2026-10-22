@@ -19,6 +19,10 @@ export default function HomeScreen({ navigation }) {
                 title="Try API request with React Query"
                 onPress={() => navigation.navigate('ApiReactQuery')}
             />
+            <Button
+                title="AsyncStorage"
+                onPress={() => navigation.navigate('AsyncStorage')}
+            />
         </View>
     );
 }

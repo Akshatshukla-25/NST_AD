@@ -4,6 +4,7 @@ import HomeScreen from '../screens/HomeScreen';
 import DetailsScreen from '../screens/Detailsscreen';
 import ApiStateScreen from '../screens/ApiStateScreen';
 import ApiReactQueryScreen from '../screens/ApiReactQueryScreen';
+import AsyncStorageScreen from '../screens/AsyncStorageScreen'
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +28,11 @@ export default function HomeStack() {
                 name="ApiReactQuery"
                 component={ApiReactQueryScreen}
                 options={{ title: 'API request with React Query' }}
+            />
+            <Stack.Screen
+                name="AsyncStorage"
+                component={AsyncStorageScreen}
+                options={{ title: 'Data Persistence with AsyncStorage' }}
             />
         </Stack.Navigator>
     );
